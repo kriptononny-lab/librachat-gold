@@ -35,7 +35,7 @@ const PLANS = [
 
 export function PricingPreviewSection() {
   return (
-    <section style={{ background: "var(--t-bg-base)", padding: "76px 24px" }}>
+    <section style={{ background: "var(--t-bg-base)"}} className="section-pad">
       <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
 
         <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
@@ -53,10 +53,7 @@ export function PricingPreviewSection() {
           14 дней бесплатно — без карты, без обязательств
         </p>
 
-        <div style={{
-          display: "grid", gridTemplateColumns: "repeat(3,1fr)",
-          gap: "14px", alignItems: "stretch", marginBottom: "24px",
-        }}>
+        <div className="grid-3col" style={{ alignItems: "stretch", marginBottom: "24px" }}>
           {PLANS.map((plan) => (
             <div
               key={plan.name}

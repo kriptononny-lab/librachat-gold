@@ -10,7 +10,7 @@ const THEMES: Record<string, Record<string, string>> = {
     "--t-bg-card-pop":"#201c10",
     "--t-brand":      "#c9a227",
     "--t-brand-light":"#e8c84a",
-    "--t-brand-hover":"#d4a82e",
+    "--t-brand-hover":"#e8c84a",
     "--t-brand-glow": "rgba(201,162,39,0.25)",
     "--t-brand-orb":  "rgba(201,162,39,0.11)",
     "--t-border":     "rgba(255,255,255,0.06)",

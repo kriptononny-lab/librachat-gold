@@ -5,10 +5,7 @@ import { Zap } from "lucide-react";
 
 export function CtaSection() {
   return (
-    <section style={{
-      background: "var(--t-bg-surface)", padding: "88px 24px",
-      textAlign: "center", position: "relative", overflow: "hidden",
-    }}>
+    <section style={{ background: "var(--t-bg-surface)", textAlign: "center", position: "relative", overflow: "hidden", }} className="section-pad">
       <div style={{
         position: "absolute", bottom: "-60px", left: "50%", transform: "translateX(-50%)",
         width: "580px", height: "320px",

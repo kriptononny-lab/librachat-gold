@@ -144,10 +144,7 @@ export function PricingClient() {
           </div>
 
           {/* Cards */}
-          <div style={{
-            display: "grid", gridTemplateColumns: "repeat(3,1fr)",
-            gap: "16px", maxWidth: "880px", margin: "0 auto", alignItems: "stretch",
-          }}>
+          <div className="grid-3col" style={{ maxWidth: "880px", margin: "0 auto", alignItems: "stretch" }}>
             {PLANS.map((plan) => {
               const price = isYearly ? plan.yearPrice : plan.monthPrice;
               const saving = isYearly ? plan.annualSaving : null;
@@ -215,7 +212,7 @@ export function PricingClient() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: "var(--t-bg-surface)", padding: "76px 24px" }}>
+      <section style={{ background: "var(--t-bg-surface)"}} className="section-pad">
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
             <span className="badge-dot" />ЧАСТО СПРАШИВАЮТ
@@ -259,7 +256,7 @@ export function PricingClient() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "var(--t-bg-base)", padding: "88px 24px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "var(--t-bg-base)", textAlign: "center", position: "relative", overflow: "hidden" }} className="section-pad">
         <div style={{
           position: "absolute", bottom: "-60px", left: "50%", transform: "translateX(-50%)",
           width: "580px", height: "320px",

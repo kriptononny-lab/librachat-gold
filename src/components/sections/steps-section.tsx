@@ -26,7 +26,7 @@ const STEPS = [
 
 export function StepsSection() {
   return (
-    <section style={{ background: "#080808", padding: "76px 24px" }}>
+    <section style={{ background: "#080808" }} className="section-pad">
       <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
 
         <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
@@ -44,11 +44,11 @@ export function StepsSection() {
           Никаких сложных настроек — просто зайди и начни
         </p>
 
-        {/* Шаги с большими иконками */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "32px", marginBottom: "48px" }}>
+        {/* Шаги с иконками */}
+        <div className="grid-3col" style={{ marginBottom: "48px" }}>
           {STEPS.map(({ number, Icon, title, desc }) => (
             <div key={number} style={{ textAlign: "center" }}>
-              {/* Круглая иконка с номером-бейджем */}
+              {/* Иконка с номером */}
               <div style={{ position: "relative", display: "inline-block", marginBottom: "20px" }}>
                 <div style={{
                   width: "80px", height: "80px", borderRadius: "50%",
@@ -59,14 +59,13 @@ export function StepsSection() {
                 }}>
                   <Icon size={32} color="#e8c84a" strokeWidth={1.5} />
                 </div>
-                {/* Номер-бейдж */}
                 <div style={{
                   position: "absolute", bottom: "0", right: "0",
                   width: "24px", height: "24px", borderRadius: "50%",
                   background: "#c9a227",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: "11px", fontWeight: 700, color: "#fff",
-                  boxShadow: "0 0 0 2px #07070d",
+                  fontSize: "11px", fontWeight: 700, color: "#000",
+                  boxShadow: "0 0 0 2px #080808",
                 }}>
                   {number}
                 </div>
@@ -82,22 +81,20 @@ export function StepsSection() {
         </div>
 
         {/* CTA кнопка */}
-        <div>
-          <Link href="https://librachat.kz/auth">
-            <button style={{
-              background: "#c9a227", border: "none", color: "#fff",
-              borderRadius: "999px", padding: "14px 36px",
-              fontSize: "15px", fontWeight: 600, cursor: "pointer",
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              fontFamily: "inherit",
-              boxShadow: "0 4px 20px rgba(201,162,39,0.25)",
-            }}>
-              Начать бесплатно →
-            </button>
-          </Link>
-          <div style={{ marginTop: "12px", fontSize: "13px", color: "rgba(255,255,255,0.3)" }}>
-            30 секунд · Без карты · Без VPN
-          </div>
+        <Link href="https://librachat.kz/auth">
+          <button style={{
+            background: "#c9a227", border: "none", color: "#000",
+            borderRadius: "999px", padding: "14px 36px",
+            fontSize: "15px", fontWeight: 600, cursor: "pointer",
+            display: "inline-flex", alignItems: "center", gap: "8px",
+            fontFamily: "inherit",
+            boxShadow: "0 4px 20px rgba(201,162,39,0.25)",
+          }}>
+            Начать бесплатно →
+          </button>
+        </Link>
+        <div style={{ marginTop: "12px", fontSize: "13px", color: "rgba(255,255,255,0.3)" }}>
+          30 секунд · Без карты · Без VPN
         </div>
 
       </div>

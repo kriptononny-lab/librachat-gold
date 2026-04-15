@@ -33,7 +33,7 @@ export function FacetsSection() {
   const [active, setActive] = useState<TabId>("self");
 
   return (
-    <section style={{ background: "var(--t-bg-surface)", padding: "76px 24px" }}>
+    <section style={{ background: "var(--t-bg-surface)"}} className="section-pad">
       <div style={{ maxWidth: "940px", margin: "0 auto", textAlign: "center" }}>
 
         <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
@@ -61,7 +61,7 @@ export function FacetsSection() {
           ))}
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "16px" }}>
+        <div className="grid-3col">
           {CARDS[active].map((card) => (
             <div key={card.badge} style={{
               background: "var(--t-bg-card)", border: "1px solid var(--t-border)",
