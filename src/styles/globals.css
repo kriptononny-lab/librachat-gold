@@ -9,10 +9,10 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   /* Фиолетовый — electric violet, используется ТОЛЬКО в 4 местах */
-  --color-brand-400: #a78bfa;
-  --color-brand-500: #7c3aed;   /* основной */
-  --color-brand-600: #6d28d9;
-  --color-brand-700: #5b21b6;
+  --color-brand-400: #e8c84a;
+  --color-brand-500: #c9a227;   /* основной */
+  --color-brand-600: #d4a82e;
+  --color-brand-700: #b8911f;
 
   /* Янтарный */
   --color-amber-400: #e8952a;
@@ -32,7 +32,7 @@
   /* Границы */
   --color-border:        rgba(255,255,255,0.06);
   --color-border-medium: rgba(255,255,255,0.09);
-  --color-border-accent: rgba(124,58,237,0.3);
+  --color-border-accent: rgba(201,162,39,0.22);
 
   /* Статусы */
   --color-success: #22c55e;
@@ -98,7 +98,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-brand-500);
+  outline: 2px solid #c9a227;
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
@@ -125,11 +125,11 @@ body {
 
 /* Кнопка-прожектор — только на primary, без внешнего свечения */
 .btn-primary-glow {
-  box-shadow: 0 4px 20px rgba(124,58,237,0.35);
+  box-shadow: 0 4px 20px rgba(201,162,39,0.25);
   transition: box-shadow 200ms ease, background 200ms ease;
 }
 .btn-primary-glow:hover {
-  box-shadow: 0 4px 28px rgba(124,58,237,0.5);
+  box-shadow: 0 4px 28px rgba(201,162,39,0.35);
 }
 
 /* Карточки */
@@ -162,7 +162,7 @@ body {
   gap: 8px;
   font-size: 11px;
   font-weight: 600;
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.55);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   background: none;
@@ -175,8 +175,8 @@ body {
   transition: border-color 200ms ease, background 200ms ease, transform 200ms ease;
 }
 .card-hover:hover {
-  border-color: rgba(255,255,255,0.1) !important;
-  background: rgba(26,26,30,0.95) !important;
+  border-color: rgba(201,162,39,0.15) !important;
+  background: #1f1f1f !important;
   transform: translateY(-2px);
 }
 
