@@ -58,7 +58,7 @@ export function Footer() {
       {/* Тонкая акцентная линия с фиолетовым свечением */}
       <div style={{
         height: "1px",
-        background: "linear-gradient(90deg, transparent 0%, rgba(201,162,39,0.22) 30%, rgba(201,162,39,0.4) 50%, rgba(201,162,39,0.22) 70%, transparent 100%)",
+        background: "linear-gradient(90deg, transparent 0%, rgba(201,162,39,0.22) 30%, rgba(201,162,39,0.35) 50%, rgba(201,162,39,0.22) 70%, transparent 100%)",
       }} />
 
       <div className="container-site" style={{ padding: "56px 0 40px" }}>

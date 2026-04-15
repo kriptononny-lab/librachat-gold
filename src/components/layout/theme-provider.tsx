@@ -4,9 +4,9 @@ import { useEffect } from "react";
 
 const THEMES: Record<string, Record<string, string>> = {
   default: {
-    "--t-bg-base":    "#07070d",
-    "--t-bg-surface": "#0d0d14",
-    "--t-bg-card":    "#141418",
+    "--t-bg-base":    "#080808",
+    "--t-bg-surface": "#0f0f0f",
+    "--t-bg-card":    "#191919",
     "--t-bg-card-pop":"#201c10",
     "--t-brand":      "#c9a227",
     "--t-brand-light":"#e8c84a",

@@ -99,7 +99,7 @@ function NavItem({ item }: { item: (typeof MAIN_NAV)[number] }) {
               position: "absolute", top: "0", left: "50%",
               transform: "translateX(-50%) translateY(-6px) rotate(45deg)",
               width: "12px", height: "12px",
-              background: "#191919",
+              background: "#1e1d2e",
               border: "1px solid rgba(255,255,255,0.1)",
               borderBottom: "none", borderRight: "none",
               zIndex: 1,
@@ -107,11 +107,11 @@ function NavItem({ item }: { item: (typeof MAIN_NAV)[number] }) {
 
             <div style={{
               minWidth: "260px",
-              background: "#191919",
+              background: "#1e1d2e",
               border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: "16px",
               padding: "8px",
-              boxShadow: "0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,162,39,0.06)",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,162,39,0.07)",
               position: "relative", zIndex: 2,
             }}>
               {item.children.map((child, i) => (
@@ -205,7 +205,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
         position:"absolute", top:0, right:0, bottom:0,
         width:"min(300px, 85vw)",
         display:"flex", flexDirection:"column",
-        background:"#191919",
+        background:"#111111",
         borderLeft:"1px solid rgba(255,255,255,0.1)",
         zIndex:1,
         overflowY:"auto",
@@ -230,7 +230,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 <Link href={item.href} style={{
                   display:"flex", alignItems:"center", padding:"12px 14px",
                   borderRadius:"10px", fontSize:"15px", fontWeight:500, textDecoration:"none",
-                  color: isActive ? "#fff" : "rgba(255,255,255,0.55)",
+                  color: isActive ? "#fff" : "#c0b8d8",
                   background: isActive ? "rgba(201,162,39,0.12)" : "transparent",
                 }}>
                   {item.label}
@@ -257,13 +257,13 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           <Link href="https://librachat.kz/auth" style={{
             display:"flex", alignItems:"center", justifyContent:"center",
             padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:600,
-            color:"#ffffff", textDecoration:"none",
+            color:"#f2f0ff", textDecoration:"none",
             border:"1px solid rgba(255,255,255,0.16)",
           }}>Войти</Link>
           <Link href="https://librachat.kz/auth" style={{
             display:"flex", alignItems:"center", justifyContent:"center",
             padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:600,
-            color:"#000000", textDecoration:"none",
+            color:"#fff", textDecoration:"none",
             background:"#c9a227", boxShadow:"0 4px 16px rgba(201,162,39,0.25)",
           }}>Начать бесплатно</Link>
         </div>
@@ -293,7 +293,7 @@ export function Header() {
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 60,
           transition: "all 300ms ease",
           padding: scrolled ? "12px 0" : "16px 0",
-          background: scrolled ? "rgba(7,7,13,0.92)" : "transparent",
+          background: scrolled ? "rgba(14,14,19,0.88)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "none",
         }}
