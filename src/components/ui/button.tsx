@@ -15,7 +15,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "text-black",
+          "text-black font-bold",
           "hover:opacity-90",
           "active:scale-[0.97]",
           "focus-visible:ring-[#c9a227]",

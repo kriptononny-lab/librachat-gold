@@ -85,7 +85,7 @@ export function StepsSection() {
           <button style={{
             background: "linear-gradient(135deg,#c9a227,#e8c84a)", border: "none", color: "#000",
             borderRadius: "999px", padding: "14px 36px",
-            fontSize: "15px", fontWeight: 600, cursor: "pointer",
+            fontSize: "15px", fontWeight: 700, cursor: "pointer",
             display: "inline-flex", alignItems: "center", gap: "8px",
             fontFamily: "inherit",
             boxShadow: "0 4px 20px rgba(201,162,39,0.25)",

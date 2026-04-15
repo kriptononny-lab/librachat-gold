@@ -262,9 +262,9 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
           }}>Войти</Link>
           <Link href="https://librachat.kz/auth" style={{
             display:"flex", alignItems:"center", justifyContent:"center",
-            padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:600,
+            padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:700,
             color:"#000", textDecoration:"none",
-            background:"var(--t-brand)", boxShadow:"0 4px 16px var(--t-brand-glow)",
+            background:"linear-gradient(135deg,#c9a227,#e8c84a)", boxShadow:"0 4px 16px var(--t-brand-glow)",
           }}>Начать бесплатно</Link>
         </div>
       </div>
