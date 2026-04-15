@@ -15,11 +15,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-[#c9a227] text-black",
+          "text-black",
           "hover:opacity-90",
           "active:scale-[0.97]",
           "focus-visible:ring-[#c9a227]",
-          "btn-primary-glow",
+          "btn-primary-gold",
         ],
         secondary: [
           "bg-transparent text-white",

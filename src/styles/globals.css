@@ -306,3 +306,15 @@ button, a[class*="rounded-full"], a[class*="rounded-"] {
 @media (max-width: 767px) {
   .hide-mobile { display: none; }
 }
+
+/* Кнопка primary — золотой градиент как в макете */
+.btn-primary-gold {
+  background: linear-gradient(135deg, #c9a227, #e8c84a);
+  color: #000 !important;
+  box-shadow: 0 4px 20px rgba(201,162,39,0.25);
+  transition: opacity 150ms ease;
+}
+.btn-primary-gold:hover {
+  opacity: .9;
+  box-shadow: 0 4px 28px rgba(201,162,39,0.35);
+}

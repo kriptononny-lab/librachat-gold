@@ -62,7 +62,7 @@ export function StepsSection() {
                 <div style={{
                   position: "absolute", bottom: "0", right: "0",
                   width: "24px", height: "24px", borderRadius: "50%",
-                  background: "#c9a227",
+                  background: "linear-gradient(135deg,#c9a227,#e8c84a)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: "11px", fontWeight: 700, color: "#000",
                   boxShadow: "0 0 0 2px #080808",
@@ -83,7 +83,7 @@ export function StepsSection() {
         {/* CTA кнопка */}
         <Link href="https://librachat.kz/auth">
           <button style={{
-            background: "#c9a227", border: "none", color: "#000",
+            background: "linear-gradient(135deg,#c9a227,#e8c84a)", border: "none", color: "#000",
             borderRadius: "999px", padding: "14px 36px",
             fontSize: "15px", fontWeight: 600, cursor: "pointer",
             display: "inline-flex", alignItems: "center", gap: "8px",

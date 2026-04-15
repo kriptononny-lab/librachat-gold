@@ -69,7 +69,7 @@ export function Footer() {
           {/* Бренд */}
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             <Logo />
-            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.22)", lineHeight: 1.65, maxWidth: "220px" }}>
+            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.45)", lineHeight: 1.65, maxWidth: "220px" }}>
               ИИ-ассистент нового поколения для работы, учёбы и творчества.
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "4px" }}>
