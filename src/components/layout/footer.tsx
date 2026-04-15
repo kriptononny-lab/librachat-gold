@@ -43,12 +43,12 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer style={{ marginTop: "auto", background: "#07060e", position: "relative" }}>
+    <footer style={{ marginTop: "auto", background: "#080808", position: "relative" }}>
 
       {/* Градиентный переход — вместо жёсткой линии */}
       <div style={{
         height: "80px",
-        background: "linear-gradient(to bottom, transparent, rgba(7,6,14,0.6) 60%, #07060e 100%)",
+        background: "linear-gradient(to bottom, transparent, rgba(8,8,8,0.6) 60%, #080808 100%)",
         marginTop: "-80px",
         pointerEvents: "none",
         position: "relative",
@@ -92,7 +92,7 @@ export function Footer() {
           {/* Навигационные колонки */}
           {NAV_COLUMNS.slice(0, 3).map((col) => (
             <div key={col.title} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: "rgba(242,240,255,0.4)", letterSpacing: "0.09em", textTransform: "uppercase", marginBottom: "4px" }}>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.38)", letterSpacing: "0.09em", textTransform: "uppercase", marginBottom: "4px" }}>
                 {col.title}
               </p>
               {col.links.map((link) => (
@@ -107,7 +107,7 @@ export function Footer() {
 
           {/* Колонка поддержки — контакты */}
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            <p style={{ fontSize: "11px", fontWeight: 700, color: "rgba(242,240,255,0.4)", letterSpacing: "0.09em", textTransform: "uppercase", marginBottom: "4px" }}>
+            <p style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.38)", letterSpacing: "0.09em", textTransform: "uppercase", marginBottom: "4px" }}>
               Поддержка
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
