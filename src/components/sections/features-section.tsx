@@ -30,8 +30,8 @@ const iconWrapStyle: React.CSSProperties = {
   width: "48px",
   height: "48px",
   borderRadius: "14px",
-  background: "rgba(124,58,237,0.12)",
-  border: "1px solid rgba(124,58,237,0.22)",
+  background: "rgba(201,162,39,0.09)",
+  border: "1px solid rgba(201,162,39,0.18)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -70,7 +70,7 @@ export function FeaturesSection() {
               style={cardStyle}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLDivElement;
-                el.style.borderColor = "rgba(124,58,237,0.35)";
+                el.style.borderColor = "rgba(201,162,39,0.25)";
                 el.style.background = "rgba(26,25,38,0.98)";
                 el.style.transform = "translateY(-3px)";
               }}
@@ -82,7 +82,7 @@ export function FeaturesSection() {
               }}
             >
               <div style={iconWrapStyle}>
-                <Icon size={22} color="#a78bfa" />
+                <Icon size={22} color="#e8c84a" />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 <h3 style={{ fontSize: "16px", fontWeight: 600, color: "#ffffff", lineHeight: 1.3 }}>{title}</h3>

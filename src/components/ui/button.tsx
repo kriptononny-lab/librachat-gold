@@ -15,10 +15,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-[#7c3aed] text-white",
+          "bg-[#c9a227] text-white",
           "hover:bg-[#5449cc]",
           "active:scale-[0.97]",
-          "focus-visible:ring-[#7c3aed]",
+          "focus-visible:ring-[#c9a227]",
           "btn-primary-glow",
         ],
         secondary: [
@@ -35,17 +35,17 @@ const buttonVariants = cva(
           "focus-visible:ring-white/20",
         ],
         outline: [
-          "border border-[#7c3aed] text-[#a78bfa]",
-          "hover:bg-[rgba(124,58,237,0.08)]",
+          "border border-[#c9a227] text-[#e8c84a]",
+          "hover:bg-[rgba(201,162,39,0.06)]",
           "active:scale-[0.97]",
-          "focus-visible:ring-[#7c3aed]",
+          "focus-visible:ring-[#c9a227]",
         ],
         destructive: [
           "bg-red-600 text-white hover:bg-red-700",
           "active:scale-[0.97]",
         ],
         link: [
-          "text-[#a78bfa] underline-offset-4 hover:underline",
+          "text-[#e8c84a] underline-offset-4 hover:underline",
           "p-0 h-auto rounded-none",
         ],
       },
