@@ -36,7 +36,7 @@ const buttonVariants = cva(
         ],
         outline: [
           "border border-[#c9a227] text-[#e8c84a]",
-          "hover:bg-[rgba(201,162,39,0.06)]",
+          "hover:bg-[rgba(201,162,39,0.07)]",
           "active:scale-[0.97]",
           "focus-visible:ring-[#c9a227]",
         ],

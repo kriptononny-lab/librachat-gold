@@ -1,34 +1,83 @@
 @import "tailwindcss";
 
+/* ===================================================
+   LIBRACHAT — Design Tokens v2 (упрощённая палитра)
+   =================================================== */
+
 @theme {
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Фиолетовый — electric violet, используется ТОЛЬКО в 4 местах */
   --color-brand-400: #e8c84a;
-  --color-brand-500: #c9a227;
+  --color-brand-500: #c9a227;   /* основной */
   --color-brand-600: #d4a82e;
   --color-brand-700: #b8911f;
+
+  /* Янтарный */
+  --color-amber-400: #e8952a;
+  --color-amber-500: #d4820f;
+
+  /* Фоны — нейтральный тёмный, без фиолетового оттенка */
   --color-bg-base:    #080808;
   --color-bg-surface: #0f0f0f;
   --color-bg-raised:  #191919;
   --color-bg-card:    #191919;
+
+  /* Текст — высокий контраст, нейтральный белый */
   --color-text-primary:   #ffffff;
   --color-text-secondary: rgba(255,255,255,0.55);
-  --color-text-muted:     rgba(255,255,255,0.36);
+  --color-text-muted:     rgba(255,255,255,0.35);
+
+  /* Границы */
   --color-border:        rgba(255,255,255,0.06);
   --color-border-medium: rgba(255,255,255,0.09);
   --color-border-accent: rgba(201,162,39,0.22);
+
+  /* Статусы */
   --color-success: #22c55e;
-  --color-warning: #c9a227;
+  --color-warning: #e8952a;
   --color-error:   #ef4444;
+
+  /* Радиусы */
   --radius-sm:   4px;
   --radius-md:   8px;
   --radius-lg:   12px;
   --radius-xl:   16px;
   --radius-2xl:  20px;
   --radius-full: 9999px;
+
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --duration-fast:   150ms;
   --duration-normal: 250ms;
+  --duration-slow:   400ms;
+}
+
+/* ===================================================
+   Base
+   =================================================== */
+
+/* ===================================================
+   Тема — переопределяется через JS (ThemeProvider)
+   =================================================== */
+:root {
+  --t-bg-base:    #080808;
+  --t-bg-surface: #0f0f0f;
+  --t-bg-card:    #191919;
+  --t-bg-card-pop:#201c10;
+  --t-brand:      #c9a227;
+  --t-brand-light:#e8c84a;
+  --t-brand-hover:#d4a82e;
+  --t-brand-glow: rgba(201,162,39,0.25);
+  --t-brand-orb:  rgba(201,162,39,0.11);
+  --t-border:     rgba(255,255,255,0.06);
+  --t-border-pop: rgba(201,162,39,0.22);
+  --t-btn-text:   #000000;
+  --t-gradient:   linear-gradient(135deg,#e8c84a,#c9a227);
+  --t-dot:        #c9a227;
+  --t-dot-glow:   rgba(201,162,39,0.5);
+  --t-heading-font: inherit;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,13 +85,14 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color-scheme: dark;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: #080808;
-  color: #ffffff;
+  background-color: var(--t-bg-base);
+  color: var(--color-text-primary);
   line-height: 1.65;
   min-height: 100dvh;
 }
@@ -57,6 +107,9 @@ body {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 9999px; }
 
+/* ===================================================
+   Контейнер
+   =================================================== */
 .container-site {
   width: 100%;
   max-width: 1200px;
@@ -66,41 +119,49 @@ body {
 @media (min-width: 768px)  { .container-site { padding-inline: 2rem; } }
 @media (min-width: 1280px) { .container-site { padding-inline: 2.5rem; } }
 
-/* кнопка CTA — градиент, текст чёрный */
-.btn-primary-glow {
-  background: linear-gradient(135deg, #c9a227, #e8c84a);
-  color: #000 !important;
-  box-shadow: 0 4px 20px rgba(201,162,39,0.25);
-  transition: opacity 150ms ease;
-}
-.btn-primary-glow:hover { opacity: .9; }
+/* ===================================================
+   Компоненты
+   =================================================== */
 
+/* Кнопка-прожектор — только на primary, без внешнего свечения */
+.btn-primary-glow {
+  box-shadow: 0 4px 20px rgba(201,162,39,0.25);
+  transition: box-shadow 200ms ease, background 200ms ease;
+}
+.btn-primary-glow:hover {
+  box-shadow: 0 4px 28px rgba(201,162,39,0.4);
+}
+
+/* Карточки */
 .card-dark {
-  background: #191919;
-  border: 1px solid rgba(201,162,39,0.08);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
 }
 .card-raised {
-  background: #201c10;
-  border: 1px solid rgba(201,162,39,0.2);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-medium);
   border-radius: var(--radius-xl);
 }
 
-/* градиент только на тексте */
+/* Градиентный текст — только на одном слове в заголовке */
 .text-gradient {
-  background: linear-gradient(135deg, #e8c84a, #c9a227);
+  background: var(--t-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* бейдж секции: точка + текст золотого цвета */
+/* Янтарный цвет текста (не градиент) */
+.text-amber { color: var(--color-amber-400); }
+
+/* Бейдж секции — пульсирующая точка + текст, без капсулы */
 .section-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(201,162,39,0.5);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -109,6 +170,7 @@ body {
   padding: 0;
 }
 
+/* Карточка с hover */
 .card-hover {
   transition: border-color 200ms ease, background 200ms ease, transform 200ms ease;
 }
@@ -118,8 +180,12 @@ body {
   transform: translateY(-2px);
 }
 
-button, a[class*="rounded-full"] { max-width: 100%; }
+/* Кнопки никогда не выходят за края */
+button, a[class*="rounded-full"], a[class*="rounded-"] {
+  max-width: 100%;
+}
 
+/* Безопасные отступы для flex-контейнеров с кнопками на мобильном */
 .btn-group {
   display: flex;
   flex-wrap: wrap;
@@ -129,8 +195,12 @@ button, a[class*="rounded-full"] { max-width: 100%; }
   width: 100%;
 }
 
+/* ===================================================
+   Анимации
+   =================================================== */
 @keyframes fade-up  { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
 @keyframes fade-in  { from { opacity:0; } to { opacity:1; } }
+@keyframes typing-cursor { 0%,100%{opacity:1} 50%{opacity:0} }
 
 .animate-fade-up { animation: fade-up  0.5s var(--ease-smooth) both; }
 .animate-fade-in { animation: fade-in  0.4s var(--ease-smooth) both; }
@@ -140,6 +210,31 @@ button, a[class*="rounded-full"] { max-width: 100%; }
 .delay-300 { animation-delay: 300ms; }
 .delay-400 { animation-delay: 400ms; }
 
+/* Фото в кейсах */
+.case-photo-wrap {
+  height: 200px;
+}
+@media (max-width: 767px) {
+  .case-photo-wrap {
+    height: 240px;
+  }
+}
+
+/* Rotating headline — строго фиксированная высота, никакого дёргания */
+.rotating-headline-wrap {
+  position: relative;
+  height: clamp(54px, 9.5vw, 122px);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Окошко чата — на мобиле скрываем вкладки и быстрые кнопки */
+@media (max-width: 767px) {
+  .widget-tabs    { display: none !important; }
+  .widget-actions { display: none !important; }
+}
+
+/* Таблица тарифов — скрываем scrollbar но оставляем скролл */
 .pricing-table-wrap {
   overflow-x: auto;
   border-radius: 20px;
@@ -148,8 +243,6 @@ button, a[class*="rounded-full"] { max-width: 100%; }
   scrollbar-width: none;
 }
 .pricing-table-wrap::-webkit-scrollbar { display: none; }
-
-/* пульсирующая точка — золотая */
 .badge-dot {
   display: inline-block;
   width: 6px;
@@ -162,17 +255,5 @@ button, a[class*="rounded-full"] { max-width: 100%; }
 }
 @keyframes badge-pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.4; transform: scale(0.8); }
-}
-
-@media (max-width: 767px) {
-  .widget-tabs    { display: none !important; }
-  .widget-actions { display: none !important; }
-}
-
-.rotating-headline-wrap {
-  position: relative;
-  height: clamp(54px, 9.5vw, 122px);
-  overflow: hidden;
-  width: 100%;
+  50%       { opacity: 0.5; transform: scale(0.8); }
 }
