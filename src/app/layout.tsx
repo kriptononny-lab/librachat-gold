@@ -63,21 +63,21 @@ export default function RootLayout({
               var theme = params.get('theme');
               if (theme === 'gold') {
                 var r = document.documentElement;
-                r.style.setProperty('--t-bg-base','#080808');
-                r.style.setProperty('--t-bg-surface','#0f0f0f');
-                r.style.setProperty('--t-bg-card','#191919');
-                r.style.setProperty('--t-bg-card-pop','#201c10');
-                r.style.setProperty('--t-brand','#c9a227');
-                r.style.setProperty('--t-brand-light','#e8c84a');
-                r.style.setProperty('--t-brand-hover','#d4a82e');
-                r.style.setProperty('--t-brand-glow','rgba(201,162,39,0.25)');
-                r.style.setProperty('--t-brand-orb','rgba(201,162,39,0.1)');
+                r.style.setProperty('--t-bg-base','#18181d');
+                r.style.setProperty('--t-bg-surface','#1e1e25');
+                r.style.setProperty('--t-bg-card','#242430');
+                r.style.setProperty('--t-bg-card-pop','#20182e');
+                r.style.setProperty('--t-brand','#7E50E8');
+                r.style.setProperty('--t-brand-light','#9B72F0');
+                r.style.setProperty('--t-brand-hover','#6B42D4');
+                r.style.setProperty('--t-brand-glow','rgba(126,80,232,0.25)');
+                r.style.setProperty('--t-brand-orb','rgba(126,80,232,0.10)');
                 r.style.setProperty('--t-border','rgba(255,255,255,0.07)');
-                r.style.setProperty('--t-border-pop','rgba(201,162,39,0.22)');
+                r.style.setProperty('--t-border-pop','rgba(126,80,232,0.25)');
                 r.style.setProperty('--t-btn-text','#000000');
-                r.style.setProperty('--t-gradient','linear-gradient(135deg,#e8c84a,#c9a227)');
-                r.style.setProperty('--t-dot','#c9a227');
-                r.style.setProperty('--t-dot-glow','rgba(201,162,39,0.6)');
+                r.style.setProperty('--t-gradient','linear-gradient(135deg,#FF6E3B,#FFD727)');
+                r.style.setProperty('--t-dot','#7E50E8');
+                r.style.setProperty('--t-dot-glow','rgba(126,80,232,0.5)');
               }
             } catch(e) {}
           })();
