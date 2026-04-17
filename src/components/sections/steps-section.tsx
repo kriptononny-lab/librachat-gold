@@ -26,7 +26,7 @@ const STEPS = [
 
 export function StepsSection() {
   return (
-    <section style={{ background: "#18181d" }} className="section-pad">
+    <section style={{ background: "#0a0a0e" }} className="section-pad">
       <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
 
         <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
@@ -65,7 +65,7 @@ export function StepsSection() {
                   background: "linear-gradient(135deg,#FF6E3B,#FFD727)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: "11px", fontWeight: 700, color: "#000",
-                  boxShadow: "0 0 0 2px #18181d",
+                  boxShadow: "0 0 0 2px #0a0a0e",
                 }}>
                   {number}
                 </div>
@@ -88,7 +88,7 @@ export function StepsSection() {
             fontSize: "15px", fontWeight: 700, cursor: "pointer",
             display: "inline-flex", alignItems: "center", gap: "8px",
             fontFamily: "inherit",
-            boxShadow: "0 4px 20px rgba(126,80,232,0.25)",
+            boxShadow: "0 4px 20px rgba(255,110,59,0.28)",
           }}>
             Начать бесплатно →
           </button>

@@ -72,7 +72,7 @@ export function PricingPreviewSection() {
                   position: "absolute", top: "-11px", left: "50%", transform: "translateX(-50%)",
                   background: "linear-gradient(135deg,#FF6E3B,#FFD727)", color: "#000", fontSize: "9px", fontWeight: 700,
                   padding: "3px 13px", borderRadius: "999px", whiteSpace: "nowrap",
-                  boxShadow: "0 3px 10px rgba(126,80,232,0.25)",
+                  boxShadow: "0 3px 10px rgba(255,110,59,0.25)",
                 }}>
                   ПОПУЛЯРНЫЙ
                 </div>

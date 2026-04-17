@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 const THEMES: Record<string, Record<string, string>> = {
   default: {
-    "--t-bg-base":    "#18181d",
-    "--t-bg-surface": "#1e1e25",
-    "--t-bg-card":    "#242430",
-    "--t-bg-card-pop":"#20182e",
+    "--t-bg-base":    "#0a0a0e",
+    "--t-bg-surface": "#0f0f14",
+    "--t-bg-card":    "#161620",
+    "--t-bg-card-pop":"#130d1e",
     "--t-brand":      "#7E50E8",
     "--t-brand-light":"#9B72F0",
     "--t-brand-hover":"#9B72F0",
@@ -21,10 +21,10 @@ const THEMES: Record<string, Record<string, string>> = {
     "--t-dot-glow":   "rgba(126,80,232,0.5)",
   },
   gold: {
-    "--t-bg-base":    "#18181d",
-    "--t-bg-surface": "#1e1e25",
-    "--t-bg-card":    "#242430",
-    "--t-bg-card-pop":"#20182e",
+    "--t-bg-base":    "#0a0a0e",
+    "--t-bg-surface": "#0f0f14",
+    "--t-bg-card":    "#161620",
+    "--t-bg-card-pop":"#130d1e",
     "--t-brand":      "#7E50E8",
     "--t-brand-light":"#9B72F0",
     "--t-brand-hover":"#6B42D4",

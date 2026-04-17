@@ -102,14 +102,14 @@ export function PricingClient() {
             fontSize: "clamp(32px, 4.5vw, 52px)", fontWeight: 800, color: "#ffffff",
             lineHeight: 1.1, letterSpacing: "-0.025em", marginBottom: "12px",
           }}>
-            Простые и{" "}
+            Выбери свой{" "}
             <span style={{
               background: "var(--t-gradient)",
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
-            }}>честные цены</span>
+            }}>результат</span>
           </h1>
           <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.42)", marginBottom: "36px" }}>
-            14 дней бесплатно на любом тарифе — без карты, без обязательств
+            Тарифы — один инструмент для всех задач. Расти вместе с ним.
           </p>
 
           {/* Toggle */}
@@ -283,7 +283,7 @@ export function PricingClient() {
                 borderRadius: "999px", padding: "14px 36px",
                 fontSize: "14px", fontWeight: 700, cursor: "pointer",
                 display: "flex", alignItems: "center", gap: "8px",
-                fontFamily: "inherit", boxShadow: "0 4px 20px rgba(126,80,232,0.25)",
+                fontFamily: "inherit", boxShadow: "0 4px 20px rgba(255,110,59,0.28)",
               }}>
                 <Zap size={16} /> Начать бесплатно
               </button>

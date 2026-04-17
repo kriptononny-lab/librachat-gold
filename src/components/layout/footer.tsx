@@ -43,12 +43,12 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer style={{ marginTop: "auto", background: "#18181d", position: "relative" }}>
+    <footer style={{ marginTop: "auto", background: "#0a0a0e", position: "relative" }}>
 
       {/* Градиентный переход — вместо жёсткой линии */}
       <div style={{
         height: "80px",
-        background: "linear-gradient(to bottom, transparent, rgba(24,24,29,0.6) 60%, #18181d 100%)",
+        background: "linear-gradient(to bottom, transparent, rgba(10,10,14,0.6) 60%, #0a0a0e 100%)",
         marginTop: "-80px",
         pointerEvents: "none",
         position: "relative",

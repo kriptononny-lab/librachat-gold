@@ -264,7 +264,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             display:"flex", alignItems:"center", justifyContent:"center",
             padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:700,
             color:"#000", textDecoration:"none",
-            background:"linear-gradient(135deg,#FF6E3B,#FFD727)", boxShadow:"0 4px 16px var(--t-brand-glow)",
+            background:"linear-gradient(135deg,#FF6E3B,#FFD727)", boxShadow:"0 4px 16px rgba(255,110,59,0.30)",
           }}>Начать бесплатно</Link>
         </div>
       </div>
@@ -293,7 +293,7 @@ export function Header() {
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 60,
           transition: "all 300ms ease",
           padding: scrolled ? "12px 0" : "16px 0",
-          background: scrolled ? "rgba(24,24,29,0.92)" : "transparent",
+          background: scrolled ? "rgba(10,10,14,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "none",
         }}

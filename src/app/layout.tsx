@@ -63,10 +63,10 @@ export default function RootLayout({
               var theme = params.get('theme');
               if (theme === 'gold') {
                 var r = document.documentElement;
-                r.style.setProperty('--t-bg-base','#18181d');
-                r.style.setProperty('--t-bg-surface','#1e1e25');
-                r.style.setProperty('--t-bg-card','#242430');
-                r.style.setProperty('--t-bg-card-pop','#20182e');
+                r.style.setProperty('--t-bg-base','#0a0a0e');
+                r.style.setProperty('--t-bg-surface','#0f0f14');
+                r.style.setProperty('--t-bg-card','#161620');
+                r.style.setProperty('--t-bg-card-pop','#130d1e');
                 r.style.setProperty('--t-brand','#7E50E8');
                 r.style.setProperty('--t-brand-light','#9B72F0');
                 r.style.setProperty('--t-brand-hover','#6B42D4');

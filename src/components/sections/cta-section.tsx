@@ -33,7 +33,7 @@ export function CtaSection() {
               borderRadius: "999px", padding: "14px 36px",
               fontSize: "14px", fontWeight: 700, cursor: "pointer",
               display: "flex", alignItems: "center", gap: "8px",
-              fontFamily: "inherit", boxShadow: "0 4px 20px rgba(126,80,232,0.25)",
+              fontFamily: "inherit", boxShadow: "0 4px 20px rgba(255,110,59,0.28)",
             }}>
               <Zap size={16} /> Начать бесплатно
             </button>

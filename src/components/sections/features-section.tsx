@@ -40,7 +40,7 @@ const iconWrapStyle: React.CSSProperties = {
 
 export function FeaturesSection() {
   return (
-    <section style={{ padding: "120px 0", background: "#1e1e25", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+    <section style={{ padding: "120px 0", background: "#0f0f14", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
       <div className="container-site">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
