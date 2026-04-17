@@ -30,8 +30,8 @@ const iconWrapStyle: React.CSSProperties = {
   width: "48px",
   height: "48px",
   borderRadius: "14px",
-  background: "rgba(201,162,39,0.09)",
-  border: "1px solid rgba(201,162,39,0.18)",
+  background: "rgba(126,80,232,0.09)",
+  border: "1px solid rgba(126,80,232,0.18)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -40,7 +40,7 @@ const iconWrapStyle: React.CSSProperties = {
 
 export function FeaturesSection() {
   return (
-    <section style={{ padding: "120px 0", background: "#100f1d", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+    <section style={{ padding: "120px 0", background: "#1e1e25", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
       <div className="container-site">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -70,7 +70,7 @@ export function FeaturesSection() {
               style={cardStyle}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLDivElement;
-                el.style.borderColor = "rgba(201,162,39,0.25)";
+                el.style.borderColor = "rgba(126,80,232,0.25)";
                 el.style.background = "rgba(26,25,38,0.98)";
                 el.style.transform = "translateY(-3px)";
               }}
@@ -82,7 +82,7 @@ export function FeaturesSection() {
               }}
             >
               <div style={iconWrapStyle}>
-                <Icon size={22} color="#e8c84a" />
+                <Icon size={22} color="#9B72F0" />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 <h3 style={{ fontSize: "16px", fontWeight: 600, color: "#ffffff", lineHeight: 1.3 }}>{title}</h3>

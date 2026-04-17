@@ -111,7 +111,7 @@ function NavItem({ item }: { item: (typeof MAIN_NAV)[number] }) {
               border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: "16px",
               padding: "8px",
-              boxShadow: "0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(201,162,39,0.07)",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(126,80,232,0.07)",
               position: "relative", zIndex: 2,
             }}>
               {item.children.map((child, i) => (
@@ -119,13 +119,13 @@ function NavItem({ item }: { item: (typeof MAIN_NAV)[number] }) {
                   key={child.href + i}
                   href={child.href}
                   style={{ display: "flex", alignItems: "center", gap: "12px", padding: "10px 12px", borderRadius: "10px", textDecoration: "none", transition: "background 150ms ease" }}
-                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(201,162,39,0.09)"; }}
+                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(126,80,232,0.09)"; }}
                   onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
                 >
                   {/* Иконка */}
                   <div style={{
                     width: "36px", height: "36px", borderRadius: "10px", flexShrink: 0,
-                    background: "rgba(201,162,39,0.08)", border: "1px solid rgba(201,162,39,0.16)",
+                    background: "rgba(126,80,232,0.08)", border: "1px solid rgba(126,80,232,0.16)",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     color: "var(--t-brand-light)",
                   }}>
@@ -231,7 +231,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                   display:"flex", alignItems:"center", padding:"12px 14px",
                   borderRadius:"10px", fontSize:"15px", fontWeight:500, textDecoration:"none",
                   color: isActive ? "#fff" : "rgba(255,255,255,0.55)",
-                  background: isActive ? "rgba(201,162,39,0.12)" : "transparent",
+                  background: isActive ? "rgba(126,80,232,0.12)" : "transparent",
                 }}>
                   {item.label}
                 </Link>
@@ -264,7 +264,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             display:"flex", alignItems:"center", justifyContent:"center",
             padding:"13px", borderRadius:"999px", fontSize:"15px", fontWeight:700,
             color:"#000", textDecoration:"none",
-            background:"linear-gradient(135deg,#c9a227,#e8c84a)", boxShadow:"0 4px 16px var(--t-brand-glow)",
+            background:"linear-gradient(135deg,#FF6E3B,#FFD727)", boxShadow:"0 4px 16px var(--t-brand-glow)",
           }}>Начать бесплатно</Link>
         </div>
       </div>
@@ -293,7 +293,7 @@ export function Header() {
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 60,
           transition: "all 300ms ease",
           padding: scrolled ? "12px 0" : "16px 0",
-          background: scrolled ? "rgba(8,8,8,0.92)" : "transparent",
+          background: scrolled ? "rgba(24,24,29,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "none",
         }}

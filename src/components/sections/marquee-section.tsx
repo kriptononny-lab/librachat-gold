@@ -27,7 +27,7 @@ function MarqueeRow({ reverse = false }: { reverse?: boolean }) {
             <span style={{ padding:"0 28px", fontSize:"13px", fontWeight:500, color:"rgba(255,255,255,0.22)", whiteSpace:"nowrap", letterSpacing:"0.02em" }}>
               {item}
             </span>
-            <span style={{ color:"rgba(201,162,39,0.22)", fontSize:"10px", flexShrink:0 }}>✦</span>
+            <span style={{ color:"rgba(126,80,232,0.22)", fontSize:"10px", flexShrink:0 }}>✦</span>
           </div>
         ))}
       </div>

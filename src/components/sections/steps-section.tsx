@@ -26,7 +26,7 @@ const STEPS = [
 
 export function StepsSection() {
   return (
-    <section style={{ background: "#080808" }} className="section-pad">
+    <section style={{ background: "#18181d" }} className="section-pad">
       <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
 
         <div className="section-badge" style={{ justifyContent: "center", marginBottom: "18px" }}>
@@ -52,20 +52,20 @@ export function StepsSection() {
               <div style={{ position: "relative", display: "inline-block", marginBottom: "20px" }}>
                 <div style={{
                   width: "80px", height: "80px", borderRadius: "50%",
-                  background: "rgba(201,162,39,0.09)",
-                  border: "1px solid rgba(201,162,39,0.16)",
+                  background: "rgba(126,80,232,0.09)",
+                  border: "1px solid rgba(126,80,232,0.16)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   margin: "0 auto",
                 }}>
-                  <Icon size={32} color="#e8c84a" strokeWidth={1.5} />
+                  <Icon size={32} color="#9B72F0" strokeWidth={1.5} />
                 </div>
                 <div style={{
                   position: "absolute", bottom: "0", right: "0",
                   width: "24px", height: "24px", borderRadius: "50%",
-                  background: "linear-gradient(135deg,#c9a227,#e8c84a)",
+                  background: "linear-gradient(135deg,#FF6E3B,#FFD727)",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   fontSize: "11px", fontWeight: 700, color: "#000",
-                  boxShadow: "0 0 0 2px #080808",
+                  boxShadow: "0 0 0 2px #18181d",
                 }}>
                   {number}
                 </div>
@@ -83,12 +83,12 @@ export function StepsSection() {
         {/* CTA кнопка */}
         <Link href="https://librachat.kz/auth">
           <button style={{
-            background: "linear-gradient(135deg,#c9a227,#e8c84a)", border: "none", color: "#000",
+            background: "linear-gradient(135deg,#FF6E3B,#FFD727)", border: "none", color: "#000",
             borderRadius: "999px", padding: "14px 36px",
             fontSize: "15px", fontWeight: 700, cursor: "pointer",
             display: "inline-flex", alignItems: "center", gap: "8px",
             fontFamily: "inherit",
-            boxShadow: "0 4px 20px rgba(201,162,39,0.25)",
+            boxShadow: "0 4px 20px rgba(126,80,232,0.25)",
           }}>
             Начать бесплатно →
           </button>

@@ -70,9 +70,9 @@ export function PricingPreviewSection() {
               {plan.isPopular && (
                 <div style={{
                   position: "absolute", top: "-11px", left: "50%", transform: "translateX(-50%)",
-                  background: "linear-gradient(135deg,#c9a227,#e8c84a)", color: "#000", fontSize: "9px", fontWeight: 700,
+                  background: "linear-gradient(135deg,#FF6E3B,#FFD727)", color: "#000", fontSize: "9px", fontWeight: 700,
                   padding: "3px 13px", borderRadius: "999px", whiteSpace: "nowrap",
-                  boxShadow: "0 3px 10px rgba(201,162,39,0.25)",
+                  boxShadow: "0 3px 10px rgba(126,80,232,0.25)",
                 }}>
                   ПОПУЛЯРНЫЙ
                 </div>
@@ -98,7 +98,7 @@ export function PricingPreviewSection() {
                   borderRadius: "999px", padding: "10px",
                   fontSize: "12px", fontWeight: plan.isPopular ? 700 : 600, cursor: "pointer",
                   border: "none", fontFamily: "inherit", transition: "all 0.15s",
-                  background: plan.isPopular ? "linear-gradient(135deg,#c9a227,#e8c84a)" : "rgba(255,255,255,0.06)",
+                  background: plan.isPopular ? "linear-gradient(135deg,#FF6E3B,#FFD727)" : "rgba(255,255,255,0.06)",
                   color: plan.isPopular ? "#000" : "rgba(255,255,255,0.4)",
                 }}>
                   {plan.cta}
