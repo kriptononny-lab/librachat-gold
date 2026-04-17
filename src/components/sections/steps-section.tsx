@@ -62,9 +62,9 @@ export function StepsSection() {
                 <div style={{
                   position: "absolute", bottom: "0", right: "0",
                   width: "24px", height: "24px", borderRadius: "50%",
-                  background: "linear-gradient(135deg,#FF6E3B,#FFD727)",
+                  background: "#7E50E8",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: "11px", fontWeight: 700, color: "#000",
+                  fontSize: "11px", fontWeight: 700, color: "#fff",
                   boxShadow: "0 0 0 2px #0a0a0e",
                 }}>
                   {number}
